@@ -1,0 +1,1569 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap');
+
+@font-face {
+  font-family: 'RoadRadio';
+  src: url('fonts/RoadRadio-Bold.ttf');
+  src: local('Road Radio Bold'), local('Road-Radio-Bold'),
+      url('/fonts/RoadRadio-Bold.woff2') format('woff2'),
+      url('/fonts/RoadRadio-Bold.woff') format('woff'),
+      url('/fonts/RoadRadio-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+*,*::before,*::after{
+  // background: transparent;
+  margin: 0;
+  padding: 0;
+  outline: none;
+  border: 0;
+  box-sizing: border-box;
+}
+html{
+  font-size: 10px;
+}
+body{
+  font: 1.6rem 'Montserrat', sans-serif;
+  line-height: 2.4rem;
+  height: 100%;
+  width: 100%;
+  font-weight: 500;
+}
+.bold{
+  font-weight: bold;
+}
+a{
+  font-family: 'Montserrat', sans-serif;
+  text-decoration: none;
+  color: #fff;
+  cursor: pointer;
+}
+li{
+  list-style: none;
+}
+.img-wrapper{
+  max-width: 100%;
+  object-fit: cover;
+}
+.fa{
+  width: 1.6rem; height: 1.6rem;
+  color: #fff;
+}
+.wrapper{
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  min-width: 320px;
+  position: relative;
+  overflow: hidden;
+}
+.container{
+  width: 100%;
+  max-width: 1190px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+.transition {
+  width: 100%;
+  height: 3.6rem;
+}
+.transition-1 {
+  background: url(/img/transition-1.png) no-repeat center/cover;
+  z-index: 5;
+  position: relative;
+}
+.transition-2 {
+  background: url(/img/transition-2.png) no-repeat center/cover;
+}
+.transition-3 {
+  background: url(/img/transition-3.png) no-repeat center/cover;
+}
+.transition-4 {
+  background: url(/img/transition-4.png);
+}
+.transition-5 {
+  background: url(/img/transition-5.png);
+}
+.ellipse {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(130px);
+}
+.header {
+  background: url(/img/bg-head.jpg) no-repeat center / cover;
+  position: relative;
+  color: #fff;
+  z-index: 1;
+  overflow: hidden;
+
+  .bg-elements{
+
+    .img-wrapper {
+      position: absolute;
+    }
+    .f-s-l {
+      // position: absolute;
+      bottom: 0;
+      left: 0;
+      z-index: 2;
+    }
+    .f-s-r {
+      // position: absolute;
+      bottom: 0;
+      right: 0;
+      z-index: 3;
+    }
+    .fir-l {
+      // position: absolute;
+      bottom: 0;
+      left: 0;
+    }
+    .fir-r {
+      // position: absolute;
+      top: 0;
+      right: 0;
+    }
+    .grass-l {
+      // position: absolute;
+      bottom: -3%;
+      left: 0;
+      z-index: 0;
+    }
+    .grass-r {
+      bottom: -3%;
+      right: 0;
+    }
+    .ellipse-green {
+      bottom: 10%;
+      right: -18%;
+      width: 425px;
+      height: 425px;
+      background: #00FFC2;
+    }
+    .ellipse-sm {
+      top: 20%;
+      left: -15%;
+      width: 383px;
+      height: 383px;
+    }
+}
+}
+
+.top-header {
+  padding: 3.7rem 0;
+  line-height: 1.5rem;
+  font-size: 1.2rem;
+}
+.top-header__f {
+  display: flex;
+  justify-content: space-between;
+}
+.top-header__f__item {
+  display: flex;
+  align-items: center;
+
+  >div {
+    display: flex;
+    align-items: center;
+  }
+}
+.logo {
+  font-family: 'RoadRadio';
+  font-size: 2.4rem;
+  font-weight: 700;
+  align-items: center;
+  >img {
+    width: 3.8rem;
+    height: 3.8rem;
+    margin-right: 2rem;
+  }
+}
+.adress {
+  >img {
+    margin-right: 1.3rem;
+  }
+}
+.contact{
+  >div:first-child {
+    text-align: end;
+    margin-right: 1.8rem;
+  }
+}
+.messanger {
+  padding: 1.1rem 2.1rem;
+  background: #111;
+  border-radius: 9rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: .1s all;
+  cursor: pointer;
+  &:hover {
+    background: #F5F5F5;
+  }
+}
+
+
+.messanger-t {
+  margin-right: .5rem;
+}
+.messanger-w {
+  margin-right: 2.8rem;
+}
+.contact__num span {  
+    font-size: 2.4rem;
+    font-family: 'RoadRadio';
+    font-weight: 700;
+}
+
+.main-header {
+  padding: 6.9rem 0;
+  text-align: center;
+  z-index: 12;
+  position: relative;
+}
+.main-header__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 0 18rem 0;
+}
+.title {
+  font-size: 4rem;
+  font-family: 'RoadRadio';
+  line-height: 5rem;
+
+  span {
+    color: #F2D86D;
+  }
+}
+.title-wt,
+.text-wt,
+.sub-title-wt {
+  color: #fff;
+}
+.title-big {
+  font-size: 5rem;
+}
+.sub-title, .sup-title{
+  font-size: 1.9rem;
+  font-weight: 500;
+  line-height: 2.8rem;
+  margin: 3.1rem 0;
+}
+.sub-title__spec {
+  display: flex;
+  align-items:  center;
+  max-width: 80rem;
+}
+.c-text {
+  font-family: 'RoadRadio';
+  font-weight: 700;
+  font-size: 2.4rem;
+  letter-spacing: 1.8rem;
+  line-height: 2.4rem;
+  color: #F2D86D;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  font-family: 'RoadRadio',serif;
+  font-weight: 700;
+  font-size: 1.7rem;
+  line-height: 1.7rem;
+  color: #1E1E1E;
+  padding: 3.4rem 3.2rem;
+  background: linear-gradient(256.59deg, #FFF2A9 16.96%, #EFCB65 81.06%);
+  box-shadow: inset 0px 5px 4px rgba(255, 255, 255, 0.3);
+  border-radius: 90px;
+  z-index: 1000;
+  transition: .1s all;
+
+  &:hover {
+    background: linear-gradient(256.59deg, #EFCB65 16.96%, #FFF2A9 81.06%);
+
+  }
+
+  img {
+    margin: 0 11px 0 0;
+  }
+}
+.btn-big {
+  padding: 4.5rem 4.5rem;
+  margin: 6.2rem 0;
+}
+.main {
+  z-index: 2;
+}
+
+
+.our-clients {
+  padding: 5.6rem 0;
+}
+
+.clients {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.hero {
+  padding: 6rem 0;
+  position: relative;
+
+  .title {
+    margin: 0 0 6rem 0;
+  }
+
+  .bg-elements {
+    position: absolute;
+    bottom: 6%;
+    right: 8%;
+
+    z-index: 3;
+  }
+}
+
+.hero__inner {
+  position: relative;
+}
+
+.category__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  max-width: 624px;
+}
+.category__item {
+  max-width: 30rem;
+  max-height: 20rem;
+  width: 30rem;
+  height: 20rem;
+  position: relative;
+  z-index: 2;
+
+  overflow: hidden;
+  border-radius: 10px;
+  margin: 0 auto;
+
+
+  img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: .3s all;
+  }
+}
+
+.category__text {
+  position: absolute;
+  bottom: 15%;
+  left: 11%;
+
+  font-family: 'RoadRadio';
+  font-size: 1.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #fff;
+  z-index: 1;
+}
+
+.wt_shadow {
+  position: absolute;
+  bottom: -100px;
+  left: 35%;
+  width: 440px;
+  height: 200px;
+  background: #fff;
+  // filter: drop-shadow(0px -70px 30px #fff);
+  filter: blur(29px);
+}
+
+.bl-sh {
+  position: absolute;
+  bottom: -40px;
+  left: 0;
+  width: 300px;
+  height: 90px;
+  background: #111;
+  filter: blur(25px);
+}
+
+.features {
+  padding: 6rem 0 10.3rem;
+  text-align: center;
+  position: relative;
+  z-index: 2;
+
+  .title {
+    margin: 0 0 5.6rem;
+  }
+
+  .bg-elements {
+    position: absolute;
+    top: 15%;
+    right: 7%;
+    z-index: 1;
+    }
+}
+
+.features__list {
+  z-index: 3;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+}
+.features__item {
+  max-width: 372px;
+  max-height: 534px;
+  width: 372px;
+  height: 534px;
+  position: relative;
+  text-align: left;
+
+  overflow: hidden;
+  border-radius: 10px;
+  z-index: 2;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .bl-sh {
+    z-index: 0;
+    position: absolute;
+    width: 370px;
+    height: 200px;
+    left: 0;
+    bottom: -3%;
+
+    background: rgba(0, 0, 0, 0.7);
+    filter: blur(30px);
+
+  }
+}
+
+.features__info{
+  z-index: 1;
+  position: absolute;
+  bottom: 4%;
+  left: 8%;
+}
+
+.features__title {
+  font-family: 'RoadRadio', sans-serif;
+  font-size: 2.2rem;
+  font-weight: 700;
+  max-width: 25rem;
+  margin: 0 0 6px 0;
+}
+
+.features__sub-title {
+  max-width: 30rem;
+}
+
+.features__item-big {
+  min-width: 372px;
+  max-width: 560px;
+  width: 100%;
+
+  .features__title {
+    max-width: 30rem;
+  }
+  .features__sub-title {
+    max-width: 45rem;
+  }
+
+  .bl-sh {
+    min-width: 37rem;
+    max-width: 56rem;
+    width: 100%;
+  }
+}
+
+.circle {
+  position: relative;
+  width: 20rem;
+  height: 20rem;
+  background: transparent;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .text {
+    font-family: 'RoadRadio', sans-serif;
+    font-size: 1.8rem;
+    line-height: 1.8rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #ccc;
+
+    position: absolute;
+    width: 100%;
+    height: 100%;
+
+    span {
+      position: absolute;
+      left: 50%;
+      transform-origin: 0 100px;
+    }
+  }
+}
+
+.show {
+  background: url(/img/bg-guarant.jpg) no-repeat center / cover;
+  position: relative;
+  text-align: center;
+  // overflow: hidden;
+
+  .show__inner {
+    position: relative;
+    z-index: 10;
+  }
+  .sub-title {
+    margin: 2.1rem 0 3rem;
+  }
+
+  .contact {
+    color: #fff;
+  }
+
+  .bg-elements {
+    z-index: 1;
+    .img-wrapper {
+      position: absolute;
+    }
+    .f-s-l {
+      bottom: 0;
+      left: 0;
+    }
+    .f-s-r {
+      bottom: 0;
+      right: 0;
+    }
+    .gun-ump {
+      top: -12%;
+      right: 0;
+    }
+    .gun-dm {
+      bottom: -15%;
+      left: 0;
+      z-index: 5;
+    }
+    .elliplse-green {
+      width: 399px;
+      height: 399px;
+      background: #00FFD1;
+      filter: blur(150px);
+      right: -13%;
+      bottom: 6%;
+    }
+    .elliplse-red {
+      width: 300px;
+      height: 300px;
+      bottom: 9%;
+      left: -20%;
+      background: #FF0000;
+      filter: blur(200px);
+      z-index: 1;
+    }
+  }
+}
+.show__inner {
+  padding: 10.2rem 0 11.6rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.slider {
+  margin: 0 0 6.8rem;
+  position: relative;
+  z-index: 5;
+}
+
+.slider__wrapper {
+  max-width: 902px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 11px;
+
+  .video {
+    max-width: 435px;
+    max-height: 244px;
+    position: relative;
+    border-radius: 1rem;
+    overflow: hidden;
+    cursor: pointer;
+  
+    video {
+      width: 100%;
+      height: 100%;
+    }
+}
+
+
+  .img-wrapper {
+    position: absolute;
+    top: 40%;
+    left: 45%;
+  }
+}
+.slider-navigation {
+  position: relative;
+  max-width: 1160px;
+}
+.slider__btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2.5rem 2.6rem;
+  border-radius: 9rem; 
+  position: absolute;
+}
+.slider__btn-l {
+  background: linear-gradient(256.59deg, #FFF2A9 16.96%, #EFCB65 81.06%);
+  top: -145px;
+  left: -15%;
+}
+.slider__btn-r {
+  background: linear-gradient(256.59deg, #FFF2A9 16.96%, #EFCB65 81.06%);
+  top: -145px;
+  right: -15%;
+}
+
+.variants {
+  padding: 10rem;
+  text-align: center;
+  position: relative;
+  // z-index: 5;
+
+  .title {
+    max-width: 80rem;
+    margin: 0 auto;
+  }
+  .sub-title {
+    margin: 15px 0 50px;
+  }
+
+  .bg__elements {
+    // position: absolute;
+    // top: 0;
+    // left: 0;
+
+    .helmet {
+      position: absolute;
+      bottom: -10%;
+      left: 0;
+    }
+
+    .rope {
+      position: absolute;
+      right: 0;
+      top: 15%;
+    }
+  }
+}
+.variants__inner {
+  display: flex;
+  flex-direction: column;
+  // align-items: center;
+}
+
+.variants__list {
+  display: flex;
+  justify-content: space-between;
+  gap: 28px;
+  flex-wrap: wrap;
+}
+.variants__item {
+  max-width: 566px;
+  min-width: 300px;
+  border-radius: 10px;
+  // background-color: #111;
+  box-shadow: 0px 20px 50px 0px rgba(0, 0, 0, 0.05);
+
+
+  .video {
+    max-width: 566px;
+    max-height: 300px;
+    border-radius: 10px 10px 0 0;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+
+    video {
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .img-wrapper {
+    position: absolute;
+    top: 40%;
+    left: 45%;
+  }
+
+  .btn {
+    padding: 35px 32px;
+    font-size: 1.4rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.variants__info {
+  padding: 29px 20px 51px;
+}
+.variants__title {
+  font-family: 'RoadRadio', sans-serif;
+  font-weight: 700;
+  font-size: 2.2rem;
+  line-height: 2.2rem;
+  // margin: 0 0 15px;
+}
+.variants__sub-title {
+  font-weight: 500;
+  font-size: 1.3rem;
+  margin: 15px 0 20px;
+}
+
+.organization {
+  padding: 3rem 0 12rem;
+
+  .title {
+    max-width: 940px;
+    margin: 0 auto;
+    text-align: center;
+
+  }
+  .sub-title {
+    margin: 26px 0 40px;
+    text-align: center;
+  }
+}
+.organization__inner {
+  display: flex;
+  flex-direction: column;
+  // align-items: center;
+}
+
+.org__list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(274px, 1fr));
+  gap: 20px;
+}
+
+.org__item {
+  position: relative;
+  z-index: 2;
+
+  overflow: hidden;
+  border-radius: 10px;
+
+  img {
+    width: 110%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .bl-sh {
+    position: absolute;
+    bottom: -80px;
+    left: -20%;
+    width: 400px;
+    height: 161px;
+    background: #111;
+    filter: blur(60px);
+  }
+}
+
+.org__info {
+  position: absolute;
+  bottom: 7%;
+  left: 11%;
+  max-width: 180px;
+
+  font-family: 'RoadRadio';
+  font-size: 1.8rem;
+  line-height: 1.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #fff;
+  z-index: 1;
+}
+.org__title {
+  margin: 0 0 10px 0;
+}
+.more-btn {
+  font-size: 1.2rem;
+  line-height: 1.2rem;
+  color: #F2D86D;
+  text-decoration: underline;
+}
+
+.plan {
+  background: url(/img/bg-o-nas.jpg) no-repeat center / cover;
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+
+  .title {
+    margin: 0 0 27px;
+    z-index: 6;
+  }
+
+  .bg-elements {
+
+    .img-wrapper {
+      position: absolute;
+    }
+    .mag {
+      bottom: 7%;
+      right: 12%;
+      z-index: 2;
+    }
+    .f-s-l {
+      bottom: 0;
+      left: 0;
+    }
+    .f-s-r {
+      bottom: 0;
+      right: 0;
+    }
+    .fir-l {
+      bottom: 0;
+      left: 0;
+      
+      z-index: 5;
+    }
+    .fir-r {
+      top: 0;
+      right: 0;
+      z-index: 5;
+    }
+    .ellipse {
+      border-radius: 50%;
+      position: absolute;
+      z-index: 3;
+    }
+    .elliplse-blue{
+      width: 1049px;
+      height: 1049px;
+      background: #00B2FF;
+      filter: blur(300px);
+      bottom: -80%;
+      left: -60%;
+    }
+    .elliplse-green {
+      width: 559px;
+      height: 559px;
+      background: #24FF00;
+      filter: blur(250px);
+      bottom: -30%;
+      right: -35%;
+    }
+  }
+}
+.plan__inner {
+  padding: 10rem 0 12rem;
+  position: relative;
+  z-index: 100;
+}
+
+.plan__list {
+  margin: 0 0 60px;
+  // z-index: 6;
+}
+.plan__item {
+  display: flex;
+  margin: 0 0 29px 0;
+  font-size: 1.3rem;
+  font-weight: 500;
+
+  img {
+    margin: 0 14px 0 0;
+  }
+}
+.plan__item:last-child {
+  margin: 0;
+}
+.cutaway {
+  max-width: 538px;
+  color: #000;
+  background: #fff;
+  overflow: hidden;
+
+  border-radius: 10px;
+}
+.top-cutaway {
+  padding: 25px 25px 20px;
+  background:#F2D86D;
+}
+.cutaway__title {
+  font-family: 'RoadRadio', sans-serif;
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 2.2rem;
+}
+
+.bot-cutaway {
+  padding: 28px 25px;
+  font-size: 1.2rem;
+  text-align: start;
+  display: flex;
+  align-items: center;
+
+  .contact__num {
+    margin: 0 23px 0 0;
+    max-width: 188px;
+    width: 100%;
+
+    span {
+      font-size: 2.4rem;
+    }
+  }
+  .fast-c {
+    text-align: end;
+    line-height: 1.4rem;
+    margin: 0 18px 0 0;
+  }
+}
+.fast-c-wrapper {
+  display: flex;
+  align-items: center;
+
+  .messenger {
+    background: #F5F5F5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 22px 32px;
+    width: 20px;
+    height: 20px;
+    border-radius: 90px;
+    transition: .1s all;
+
+    &:hover {
+      background: #111;
+    }
+    img {
+      width: 20px;
+      height: 20px;
+    }
+  }
+  .mess-t{
+    margin: 0 5px 0 0;
+  }
+}
+.transition-4,
+.transition-5 {
+  position: relative;
+  z-index: 10;
+}
+
+.specialize {
+  padding: 100px 0 128px;
+  color: #000;
+  text-align: center;
+  cursor:auto;
+
+  .title {
+    font-size: 3.8rem;
+  }
+  .sub-title-spec {
+    display: flex;
+    align-items: center;
+    max-width: 700px;
+    margin: 38px auto 4px;
+
+    sub-title {
+      font-size: 1.8rem;
+
+      span {
+        font-weight: 700;
+      }
+    }
+  }
+  .img-wraper {
+    display: flex;
+    position: relative;
+    max-width: 874px;
+    margin: 0 auto;
+    overflow: hidden;
+    img {
+      width: 100%;
+      height: 100%;
+    }
+    
+    .wt-shadow {
+      position: absolute;
+      width: 949px;
+      height: 135px;
+      background: #fff;
+      filter: blur(20px);
+      bottom: -10%;
+      left: -5%;
+    }
+    .wt_shadow-2,
+    .wt_shadow-3 {
+      transform: rotate(0.25turn);
+    }
+    .wt_shadow-2 {
+      top: 40%;
+      left: -55%;
+    }
+    .wt_shadow-3 {
+      top: 40%;
+      left: 50%;
+    }
+  }
+}
+.specialize__inner {
+  display: flex;
+  flex-direction: column;
+}
+
+.specialize__list {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 30px 60;
+  justify-content: space-between;
+}
+.specialize__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+
+  .count {
+    font-family: 'RoadRadio' , sans-serif;
+    font-size: 7rem;
+    line-height: 7rem;
+    font-weight: 700;
+    background: linear-gradient(#FFF2A9, #EFCB65);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .sub-title {
+    max-width: 176px;
+    font-size: 1.4rem;
+    margin: 0;
+  }
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 5px;
+  margin: 0 auto;
+
+  .img-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.quest {
+  padding: 120px 0 0;
+  color: #000;
+  text-align: center;
+
+  .title {
+    margin: 0 0 77px;
+  }
+}
+
+.quest__item {
+  max-width: 562px;
+  margin: 0 auto 30px;
+  position: relative;
+
+  &:last-child {
+    margin: 0 auto;
+  }
+}
+.quest__title {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 2rem;
+  line-height: 2rem;
+  font-family: 'RoadRadio' , sans-serif;
+  cursor: pointer;
+  transition: 0.3s;
+
+  &::before {
+    content: '+';
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+  }
+
+  div:first-child{
+    max-width: 466px;
+    width: 100%;
+    text-align: start;
+  }
+}
+.quest__text {
+  position: relative;
+  height: 0;
+  transition: .5s all;
+  margin: 10px 0 0;
+  overflow: hidden;
+  // overflow-y: auto;
+}
+.quest__item.active .quest__text {
+  height: 100px;
+}
+.quest__item.active .quest__title::before {
+  content: '-';
+}
+
+.welcome {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  position: relative;
+  padding: 10px 0;
+  color: #000;
+
+  .img-wrapper {
+    display: flex;
+    position: relative;
+    overflow: hidden;
+    img{
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .bg-wt {
+      position: absolute;
+      width: 1160px;
+      height: 145px;
+      background: #fff;
+      filter: blur(50px);
+      top: -12%;
+      left: 0;
+    }
+    .bg-wt2,
+    .bg-wt3 {
+      transform: rotate(0.25turn);
+    }
+    .bg-wt2 {
+      top: 10%;
+      left: -55%;
+    }
+    .bg-wt3 {
+      top: 10%;
+      left: 50%;
+    }
+    .cloud {
+      position: absolute;
+      top: 35%;
+      left: 22%;
+    }
+  }
+}
+.welcome__block {
+  display: flex;
+  justify-content: space-between;
+  gap: 5px;
+}
+.map {
+  max-width: 760px;
+
+  .img-wrapper {
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+
+.welcome__card {
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  box-shadow: 0px 20px 50px 0px #0000000D;
+
+  max-width: 380px;
+  text-align: start;
+  padding: 41px 46px 29px;
+
+  .adress {
+    display: flex;
+    font-size: 1.2rem;
+    line-height: 1.4rem;
+    margin: 0 0 25px 0;
+
+    img {
+      margin: 0 13px 0 0;
+    }
+  }
+  .contact-w {
+    display: flex;
+    align-items: center;
+    font-size: 1.2rem;
+    line-height: 1.4rem; 
+    text-align: start;
+
+    .fast-c {
+      margin: 0 13px 0 0;
+    }
+
+    .messanger {
+      background: #F5F5F5;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 22px 32px;
+      width: 20px;
+      height: 20px;
+      border-radius: 90px;
+      &:hover {
+        background: #111;
+      }
+      img {
+        width: 20px;
+        height: 20px;
+      }
+    }
+    .mess-t{
+      margin: 0 5px 0 0;
+    }
+  }
+  .contact-num{
+    // display: flex;
+    font-size: 1.2rem;
+  div{  
+    font-size: 2.4rem;
+    line-height: 2.4rem;
+    font-family: 'RoadRadio';
+    font-weight: 700;
+    margin: 0 0 3px 0;
+  }
+}
+}
+.welcome__title {
+  font-family: 'RoadRadio', sans-serif;
+  font-size: 2.4rem;
+  line-height: 2.4rem;
+  font-weight: 700;
+}
+.welcome__text {
+  margin: 25px 0;
+  font-size: 1.4rem;
+}
+
+.footer {
+  padding: 66px 0;
+  color: #000;
+}
+.footer__inner {
+  display: flex;
+  align-items: center;
+}
+.footer-logo {
+  display: flex;
+  align-items:center;
+  color: #000;
+  margin: 0 50px 0 0;
+}
+.footer__info {
+  display: flex;
+  flex-direction: column;
+
+  div {
+    color: #000;
+    cursor:auto;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+
+  .privacy {
+  color: #000;
+  cursor: pointer;
+  &:hover {
+    text-decoration: underline;
+  }
+  } 
+}
+
+@media screen and (min-width:1520px){
+  .gallery {
+  grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
+  }
+}
+
+@media screen and (max-width: 1390px) {
+  .variants__item {
+    max-width: 550px;
+  }
+  
+  .variants .bg__elements .rope {
+    position: absolute;
+    right: -8%;
+    top: 15%;
+  }
+  .plan .bg-elements .mag {
+    right: -7%;
+  }
+}
+
+@media screen and (max-width: 1357px) {
+  .variants__item {
+    max-width: 520px;
+  }
+}
+
+@media screen and (max-width: 1298px) {
+  .variants__list {
+    gap: 15px;
+  }
+  .variants__item {
+    max-width: 500px;
+  }
+}
+
+@media screen and (max-width: 1245px) {
+  .hero .bg-elements {
+    z-index: 3;
+    right: -1%;
+  }
+
+.hero__inner {
+  z-index: 6;
+}
+  .circle .text span {
+    left: 75%;
+  }
+  .variants__item {
+    max-width: 480px;
+  }
+}
+
+@media screen and (max-width: 1205px) {
+  .variants__item {
+    max-width: 460px;
+  }
+}
+@media screen and (max-width: 1186px){
+  .features__list {
+    gap: 10px; 
+  }
+}
+@media screen and (max-width: 1166px) {
+  .features__list {
+    gap: 10px; 
+  }
+  .features__item {
+    max-width: 350px;
+  }
+  .features__item-big {
+    max-width: 540px;
+  }
+  .variants__item {
+    max-width: 440px;
+  }
+}
+
+@media screen and (max-width: 1125px) {
+  .features__list {
+    gap: 5px; 
+  }
+  
+  .features__item {
+    max-width: 330px;
+  }
+  .features__item-big {
+    max-width: 500px;
+  }
+  .variants__list {
+    justify-content: space-around;
+  }
+  .variants__item {
+    max-width: 566px;
+  }
+  .variants .bg__elements .helmet {
+    left: -10%;
+  }
+}
+
+@media screen and (max-width: 1038px) {
+  .features__item {
+    max-width: 310px;
+  }
+  .features__item-big {
+    max-width: 470px;
+  }
+}
+@media screen and (max-width: 976px) {
+  .top-header__f__item:nth-child(2) {
+    display: none;
+  }
+  .hero{
+    padding: 0;
+    .title {
+      text-align: center;
+    }
+    .bg-elements {
+      display: none;
+    }
+  }
+  .hero__inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .features__list {
+    justify-content: space-around;
+  }
+  .features__item:nth-child(3) {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 909px) {
+  .variants .bg__elements .helmet {
+    left: -18%;
+    bottom: -5%;
+  }
+  .clients {
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+  .variants__item{
+    max-width: 566px;
+    min-width: 400px;
+  }
+}
+@media screen and (max-width: 840px) {
+  .top-header .contact__num {
+    display: none;
+  }
+  .img-wrapper {
+    .bg-wt {
+      top: -5%;
+    }
+    .bg-wt2,
+    .bg-wt3 {
+      transform: rotate(0.25turn);
+    }
+    .bg-wt2 {
+      // left: -3%;
+      display: none;
+    }
+    .bg-wt3 {
+      left: 30%;
+    }
+    .cloud {
+      position: absolute;
+      top: 35%;
+      left: 22%;
+    }
+  }
+  .variants .bg__elements .rope {
+    right: -20%;
+  }
+  .specialize .img-wraper .wt_shadow-2,
+  .specialize .img-wraper .wt_shadow-3 {
+    display: none;  
+  }
+  .specialize__list {
+    gap: 25px;
+    justify-content: space-around;
+  }
+  
+}
+
+@media screen and (max-width: 660px) {
+  .top-header__f__item {
+    .adress {
+      display: none;
+    }
+  }
+  .features__item:nth-child(1),
+  .features__item:nth-child(2) {
+    display: none;
+  }
+  .circle .text span {
+    left: 75%;
+    top: 45%;
+  }
+  .category__item {
+    max-width: 270px;
+  }
+  .slider__btn {
+    display: none;
+  }
+  .video .img-wrapper img {
+    width: 40px;
+  }
+  .show .btn {
+    margin: 20px 0;
+  }
+  .variants .bg__elements .rope {
+    right: -30%;
+  }
+}
+
+@media screen and (max-width: 515px) {
+  .our-clients,
+  .variants,
+  .specialize {
+    padding: 25px 0;
+  }
+  .category__item {
+    max-width: 300px;
+  }
+  .features__item:nth-child(4),
+  .features__item:nth-child(5) {
+    display: none;
+  }
+  .features__item:nth-child(1),
+  .features__item:nth-child(2),
+  .features__item:nth-child(3){
+    display: block;
+    max-width: fit-content;
+    width: 100%;
+  }
+  .variants .bg__elements .rope,
+  .variants .bg__elements .helmet {
+    display: none;
+  }
+}
+@media screen and (max-width: 490px) {
+  html {
+    font-size: 8px;
+  }
+  .top-header__f__item .contact {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 410px) {
+  .circle .text span {
+    top: 20%;
+  }
+}
+@media screen and (max-width: 425) {
+  html {
+    font-size: 6px;
+  }
+}
